@@ -1,0 +1,26 @@
+{
+  "name": "animewatchorder",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.9.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/pwa": "^3.0.2",
+    "core-js": "^3.6.5",
+    "i": "^0.3.6",
+    "nuxt": "^2.14.12",
+    "nuxt-lazy-load": "^1.2.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.1",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+  }
+}
