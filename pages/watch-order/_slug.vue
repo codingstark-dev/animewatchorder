@@ -1,6 +1,7 @@
 <template>
-  <article class=" lg:flex ">
-    <div class=" text-center items-center  justify-center bg-blue-100 lg:bg-transparent">
+  <article class="  overflow-hidden  ">
+
+    <!-- <div class=" text-center items-center  justify-center bg-blue-100 lg:bg-transparent">
       <br>
       <h1 class="text-2xl font-medium">{{article.title}}</h1>
       <br>
@@ -8,12 +9,53 @@
         class="cover-art fifty-fifty"
         :style="{ backgroundImage: 'url(' + article.image + ')' }"
       ></div><br>
-    </div>
-    <!-- <div class="pt-10 text-center items-center flex justify-center bg-blue-100"><img
+    </div> -->
+    <div class="py-10 text-center space-y-5  bg-blue-100">
+      <h1 class="text-2xl   font-medium">{{article.headline}}</h1>
+      <img
         :src="article.image"
         alt=""
-        class="rounded-xl shadow-sm bg-center bg-cover bg-no-repeat w-64 h-72 "
-      ></div> -->
+        class=" object-cover rounded-xl shadow-sm bg-center text-center  m-auto w-56 h-72 "
+      >
+    </div>
+    <hr>
+    <div class="flex flex-col  space-y-3 sm:flex-row text-xs sm:space-y-0 sm:space-x-4 p-5 ">
+      <!-- <div class="w-32 flex-shrink-0">
+        <div class="h-10 flex flex-col justify-center">
+          <div class="text-sm font-semibold text-gray-900">Yellow</div>
+          <div><code class="text-xs text-gray-500">colors.amber</code></div>
+        </div>
+      </div> -->
+      <div class="w-full   flex grid justify-evenly grid-cols-2  lg:grid-cols-4 gap-x-4 gap-y-3 2xl:gap-x-2 m-auto lg:pl-20">
+        <div class="space-x-1.5 flex items-center">
+          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-blue-100"></div>
+
+          <div class="font-bold text-sm">Episodes</div>
+
+        </div>
+        <div class="space-x-1.5 flex items-center col-span-2">
+          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-pink-200"></div>
+
+          <div class="font-bold text-sm">Original Video Animation (OVA)
+          </div>
+
+        </div>
+        <div class="space-x-1.5 flex items-center">
+          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-yellow-100"></div>
+
+          <div class="font-bold text-sm">Movie</div>
+
+        </div>
+
+        <div class="space-x-1.5 flex items-center">
+          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-green-200"></div>
+
+          <div class="font-bold text-sm">Manga</div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
     <div class="  px-5 ">
       <nav class="py-4 lg:py-8 lg:pl-8 lg:pr-2">
         <p class="mb-3 lg:mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">On this page</p>
@@ -27,7 +69,7 @@
             <NuxtLink
               :to="`#${link.id}`"
               class="block text-sm scrollactive-item transition-padding ease-in-out duration-300 hover:pl-1 py-2 text-primary-500"
-            >{{ link.text }}</NuxtLink>
+            >{{ link.text  }}</NuxtLink>
           </li>
         </ul>
 
@@ -46,42 +88,6 @@ export default {
 };
 </script>
 <style >
-@media screen and (max-width: 767px) {
-  .cover-art {
-    position: static;
-    display: block;
-    margin-right: auto;
-    margin-bottom: 40px;
-    margin-left: auto;
-  }
-}
-.cover-art {
-  margin-top: 10px;
-  right: auto;
-  bottom: auto;
-  z-index: 5;
-  width: 200px;
-  height: 270px;
-  border-radius: 18px;
-  background-color: #e4e9f0;
-  box-shadow: 0 20px 80px 0 rgba(74, 78, 84, 0.25);
-  -webkit-filter: none;
-  filter: none;
-}
-@media screen and (max-width: 991px) {
-  .cover-art {
-    left: 20px;
-    background-image: none;
-  }
-}
-.fifty-fifty,
-.fifty-one-hundred {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.fifty-fifty {
-  background-position: 50% 50%;
-}
 .nuxt-content h3:after {
   content: " ";
   width: 80%;
@@ -148,5 +154,16 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+fieldset,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
 }
 </style>

@@ -59,7 +59,18 @@ export default {
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
     "@nuxt/content",
-    "nuxt-lazy-load"
+    "nuxt-lazy-load",
+    [
+      "nuxt-compress",
+      {
+        gzip: {
+          cache: true
+        },
+        brotli: {
+          threshold: 10240
+        }
+      }
+    ]
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -69,5 +80,24 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {
+    extractCSS: true,
+
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true
+      }
+    }
+  }
 };

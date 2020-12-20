@@ -17,18 +17,18 @@
             class=" bg-center bg-cover bg-no-repeat	div-block-2"
             :style="{ backgroundImage: 'url(' + item.image + ')' }"
           ></div> -->
-          <div class="flex   items-center"><a
-              class="relative "
+          <div class="flex items-center"><a
+              class="relative  "
               :href="'watch-order/'+item.slug"
             >
               <img
                 :data-src="item.image"
                 alt=""
-                class="rounded-xl shadow-sm bg-center bg-cover bg-no-repeat w-64 h-72 md:h-96 lg:h-96"
+                class="object-cover	rounded-xl shadow-sm bg-center w-64 h-72 md:h-96 lg:h-96"
                 v-lazy-load
               >
 
-              <span class="opacity-70 font-bold">{{item.title}}</span> <span class="absolute bg-green-400  top-2 left-1 text-black font-bold rounded-full text-sm py-0.5 px-2  text-white">Current Popular</span></a>
+              <span class="opacity-70 font-bold ">{{item.title}}</span> <span class="absolute bg-green-400  top-2 left-1 text-black font-bold rounded-full text-sm py-0.5 px-2  text-white">Current Popular</span></a>
           </div>
 
         </div>

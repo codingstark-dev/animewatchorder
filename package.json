@@ -15,6 +15,7 @@
     "core-js": "^3.6.5",
     "i": "^0.3.6",
     "nuxt": "^2.14.12",
+    "nuxt-compress": "^4.1.0",
     "nuxt-lazy-load": "^1.2.4"
   },
   "devDependencies": {
