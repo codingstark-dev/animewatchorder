@@ -33,7 +33,7 @@
           <div class="font-bold text-sm">Episodes</div>
 
         </div>
-        <div class="space-x-1.5 flex items-center col-span-2">
+        <div class="space-x-1.5 lg:col-auto  flex items-center   col-span-2 ">
           <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-pink-200"></div>
 
           <div class="font-bold text-sm">Original Video Animation (OVA)
@@ -56,7 +56,7 @@
       </div>
     </div>
     <hr>
-    <div class="  px-5 ">
+    <div class="px-5">
       <nav class="py-4 lg:py-8 lg:pl-8 lg:pr-2">
         <p class="mb-3 lg:mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">On this page</p>
         <ul>
@@ -74,12 +74,18 @@
         </ul>
 
       </nav>
+
       <nuxt-content :document="article" />
     </div>
   </article>
 </template>
 <script>
+import colorCard from "~/components/colorCard";
+
 export default {
+  components: {
+    colorCard,
+  },
   async asyncData({ $content, params }) {
     const article = await $content("watch-order", params.slug).fetch();
 
