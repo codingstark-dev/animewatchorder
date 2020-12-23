@@ -15,7 +15,9 @@
       <img
         :src="article.image"
         alt=""
-        class=" object-cover rounded-xl shadow-sm bg-center text-center  m-auto w-56 h-72 "
+        width="400"
+        height="600"
+        class=" object-cover  rounded-xl shadow-sm bg-center text-center  m-auto w-56 h-72 shadow-offset-black"
       >
     </div>
     <hr>
@@ -77,6 +79,13 @@
       <hr>
       <nuxt-content :document="article" />
     </div>
+    <hr>
+    <client-only>
+      <div class="p-8">
+
+        <Disqus :pageConfig="disqusConfig" />
+      </div>
+    </client-only>
 
   </article>
 </template>
@@ -84,8 +93,66 @@
 import colorCard from "~/components/colorCard";
 
 export default {
+  head() {
+    return {
+      title: this.article.title,
+      titleTemplate: "%s - SageAnime",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.articleDescription,
+        },
+        // Open Graph
+        { hid: "og:title", property: "og:title", content: this.article.title },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.article.description,
+        },
+        { hid: "og:type", property: "og:type", content: "article" },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: `https://military-eyes.surge.sh/watch-order/${this.imageLink}`,
+        },
+        { property: "article:published_time", content: this.article.created },
+        { property: "article:modified_time", content: this.article.updated },
+        {
+          property: "article:tag",
+          content: this.article.tags ? this.article.tags.toString() : "",
+        },
+        // Twitter
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.completeTitle,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.articleDescription,
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: `https://military-eyes.surge.sh/watch-order/${this.imageLink}`,
+        },
+      ],
+    };
+  },
   components: {
     colorCard,
+  },
+
+  computed: {
+    disqusConfig() {
+      return {
+        url: `https://military-eyes.surge.sh/watch-order/${this.$route.path}`,
+        identifier: this.article.slug,
+        title: this.article.headline,
+      };
+    },
   },
   async asyncData({ $content, params }) {
     const article = await $content("watch-order", params.slug).fetch();
@@ -109,11 +176,12 @@ export default {
 }
 
 .nuxt-content p {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.625;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
+  opacity: 0.75;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-duration: 0.3s;
   transition-timing-function: linear;

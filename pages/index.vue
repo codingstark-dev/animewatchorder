@@ -72,7 +72,6 @@ export default {
   max-width: 16vw;
   min-height: 345px;
   min-width: 200px;
-
   background-color: #e4e9f0;
 }
 </style>

@@ -6,7 +6,19 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "" },
+      // {
+      //   property: "og:image",
+      //   content: "/favicon.webp"
+      // },
+      // {
+      //   property: "og:url",
+      //   content: "https://instareel.site/"
+      // },
+      {
+        name: "theme-color",
+        content: "#6366f1"
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -15,7 +27,10 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: "~/plugins/card.js", mode: "client" }],
+  plugins: [
+    { src: "~/plugins/card.js", mode: "client" },
+    { src: "~/plugins/disqus.js" }
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

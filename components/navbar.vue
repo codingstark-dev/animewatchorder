@@ -5,10 +5,10 @@
         <div class="flex items-center justify-between h-16">
           <div class="lg:w-1/5 flex items-center pr-4"><a
               aria-label="Nuxt TailwindCSS Logo"
-              class="flex-shrink-0 flex-1 font-bold text-xl nuxt-link-active text-white"
+              class="flex-shrink-0 flex-1 font-bold text-xl nuxt-link-active text-white text-black shadow-underline"
               href="/"
             >
-              AnimeWatch
+              SageAnime
             </a></div>
           <div class="flex-1 flex justify-start w-4/6">
             <div class="w-full relative flex flex-col justify-between hidden lg:block">

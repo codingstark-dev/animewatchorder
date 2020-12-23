@@ -15,7 +15,8 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.12",
     "nuxt-compress": "^4.1.0",
-    "nuxt-lazy-load": "^1.2.4"
+    "nuxt-lazy-load": "^1.2.4",
+    "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.1",
