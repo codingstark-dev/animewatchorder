@@ -58,12 +58,12 @@
     <hr>
     <div class="px-5">
       <nav class="py-4 lg:py-8 lg:pl-8 lg:pr-2">
-        <p class="mb-3 lg:mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">On this page</p>
+        <p class="mb-3 lg:mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Jump On The Point</p>
         <ul>
           <li
             v-for="link of article.toc"
             :key="link.id"
-            class="text-gray-700 dark:text-gray-300 border-t border-dashed dark:border-gray-800 first:border-t-0"
+            class="text-gray-700 dark:text-gray-300 border-t border-dashed dark:border-gray-800 first:border-t-0 font-medium"
             :class="{ 'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
           >
             <NuxtLink
@@ -74,9 +74,10 @@
         </ul>
 
       </nav>
-
+      <hr>
       <nuxt-content :document="article" />
     </div>
+
   </article>
 </template>
 <script>
@@ -94,17 +95,21 @@ export default {
 };
 </script>
 <style >
-.nuxt-content h3:after {
+.nuxt-content h3::after {
   content: " ";
   width: 80%;
   display: block;
+
   --border-opacity: 1;
+
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   border-radius: 0.25rem;
   border: 2px solid #4f46e5;
 }
+
 .nuxt-content p {
+  font-weight: 400;
   line-height: 1.625;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -113,6 +118,7 @@ export default {
   transition-duration: 0.3s;
   transition-timing-function: linear;
 }
+
 blockquote,
 dd,
 dl,
@@ -128,6 +134,7 @@ p,
 pre {
   margin: 0;
 }
+
 .nuxt-content h2 {
   position: relative;
   font-size: 1.5rem;
@@ -135,16 +142,20 @@ pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.nuxt-content h2:after {
+
+.nuxt-content h2::after {
   content: " ";
   width: 80%;
   display: block;
+
   --border-opacity: 1;
+
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   border-radius: 0.25rem;
   border: 2px solid #4f46e5;
 }
+
 .nuxt-content h3 {
   position: relative;
   font-size: 1.25rem;
@@ -152,6 +163,7 @@ pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 h1,
 h2,
 h3,
@@ -161,6 +173,7 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
 ol,
 ul {
   list-style: none;
