@@ -2,7 +2,6 @@ import getRoutes from "./utils/getRoutes";
 
 export default {
   target: "static",
- 
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -61,8 +60,7 @@ export default {
       name: "SageAnime",
       short_name: "SageAnime",
       theme_color: "#6366f1",
-      background_color: "#ffffff",
-    
+      background_color: "#ffffff"
     }
   },
   tailwindcss: {
@@ -91,10 +89,10 @@ export default {
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
+    "nuxt-purgecss",
     // https://go.nuxtjs.dev/content
     "@nuxt/content",
     "@nuxtjs/sitemap",
-
     "nuxt-lazy-load",
     [
       "nuxt-compress",
@@ -108,7 +106,10 @@ export default {
       }
     ]
   ],
-
+  purgeCSS: {
+    mode: 'postcss',
+    enabled: (process.env.NODE_ENV === 'production')
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 

@@ -5,10 +5,10 @@
         <div class="flex items-center justify-between h-16">
           <div class="lg:w-1/5 flex items-center pr-4"><a
               aria-label="Nuxt TailwindCSS Logo"
-              class="flex-shrink-0 flex-1 font-bold text-xl nuxt-link-active text-white text-black shadow-underline"
               href="/"
+              class="flex-shrink-0 flex-1 font-bold text-xl nuxt-link-active text-white text-black shadow-underline"
             >
-              SageAnime
+              🎃 SαɠҽAɳιɱҽ 🎃
             </a></div>
           <div class="flex-1 flex justify-start w-4/6">
             <div class="w-full relative flex flex-col justify-between hidden lg:block">
@@ -29,7 +29,7 @@
                       <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg></div> <input
                     id="search"
-                    placeholder="Search the docs (Press &quot;/&quot; to focus)"
+                    placeholder="Search the doc"
                     type="search"
                     autocomplete="off"
                     class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-transparent text-gray-700 dark:text-white dark-focus:text-white focus:border-gray-300 dark-focus:border-gray-700 rounded-md focus:outline-none focus:bg-white dark-focus:bg-gray-900 bg-gray-200 dark:bg-gray-800"
@@ -130,7 +130,7 @@
                         <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                       </svg></div> <input
                       id="search"
-                      placeholder="Search the docs (Press &quot;/&quot; to focus)"
+                      placeholder="Search the docs"
                       type="search"
                       autocomplete="off"
                       class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-transparent text-gray-700 dark:text-white dark-focus:text-white focus:border-gray-300 dark-focus:border-gray-700 rounded-md focus:outline-none focus:bg-white dark-focus:bg-gray-900 bg-gray-200 dark:bg-gray-800"
