@@ -101,7 +101,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.articleDescription,
+          content: this.article.description,
         },
         // Open Graph
         { hid: "og:title", property: "og:title", content: this.article.title },

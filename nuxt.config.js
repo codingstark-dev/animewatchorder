@@ -1,5 +1,9 @@
+import getRoutes from "./utils/getRoutes";
+
 export default {
   target: "static",
+ 
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: "animewatchorder",
@@ -41,9 +45,24 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/pwa"
   ],
+  sitemap: {
+    path: "/sitemap.xml",
+    hostname: "https://military-eyes.surge.sh/",
+    routes() {
+      return getRoutes();
+    }
+  },
+
   pwa: {
     workbox: {
       clientsClaim: false
+    },
+    manifest: {
+      name: "SageAnime",
+      short_name: "SageAnime",
+      theme_color: "#6366f1",
+      background_color: "#ffffff",
+    
     }
   },
   tailwindcss: {
@@ -74,6 +93,8 @@ export default {
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
     "@nuxt/content",
+    "@nuxtjs/sitemap",
+
     "nuxt-lazy-load",
     [
       "nuxt-compress",

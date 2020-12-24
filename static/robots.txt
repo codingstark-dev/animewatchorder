@@ -1,0 +1,3 @@
+User-agent: * 
+Crawl-Delay: 20
+Sitemap: https://military-eyes.surge.sh/sitemap.xml
