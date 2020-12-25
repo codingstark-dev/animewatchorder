@@ -29,9 +29,9 @@
                       <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg></div> <input
                     id="search"
-                    placeholder="Search the doc"
+                    placeholder="Search Here.."
                     type="search"
-                    autocomplete="off"
+                    autocomplete="on"
                     class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-transparent text-gray-700 dark:text-white dark-focus:text-white focus:border-gray-300 dark-focus:border-gray-700 rounded-md focus:outline-none focus:bg-white dark-focus:bg-gray-900 bg-gray-200 dark:bg-gray-800"
                   >
                 </div>
@@ -130,9 +130,9 @@
                         <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                       </svg></div> <input
                       id="search"
-                      placeholder="Search the docs"
+                      placeholder="Search Here.."
                       type="search"
-                      autocomplete="off"
+                      autocomplete="on"
                       class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-transparent text-gray-700 dark:text-white dark-focus:text-white focus:border-gray-300 dark-focus:border-gray-700 rounded-md focus:outline-none focus:bg-white dark-focus:bg-gray-900 bg-gray-200 dark:bg-gray-800"
                     >
                   </div>
@@ -143,15 +143,15 @@
 
             <a
               href="#"
-              class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600"
+              class="block px-2 py-1 text-white font-semibold rounded hover:bg-indigo-300"
             >gon</a>
             <a
               href="#"
-              class="mt-1 block px-2 py-1 text-white font-semibold rounded  hover:bg-gray-600"
+              class="mt-1 block px-2 py-1 text-white font-semibold rounded  hover:bg-indigo-300"
             >tanjiro</a>
             <a
               href="#"
-              class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600"
+              class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-indigo-300"
             >killua</a>
             <hr class="my-4">
             <div class="lg:hidden space-x-2">

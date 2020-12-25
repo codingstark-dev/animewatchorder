@@ -25,4 +25,108 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+.nuxt-content h3::after {
+  content: " ";
+  width: 80%;
+  display: block;
+
+  --border-opacity: 1;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.25rem;
+  border: 2px solid #4f46e5;
+}
+
+.nuxt-content p {
+  font-weight: 500;
+  line-height: 1.625;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  /* opacity: 0.75; */
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+
+.nuxt-content h2 {
+  position: relative;
+  font-size: 1.5rem;
+  display: table;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.nuxt-content h1 {
+  position: relative;
+  font-size: 1.5rem;
+  display: table;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.nuxt-content a {
+  color: #4f46e5;
+}
+.nuxt-content a:hover {
+  color: #4f46e5;
+  opacity: 0.8;
+}
+.nuxt-content h2::after {
+  content: " ";
+  width: 80%;
+  display: block;
+
+  --border-opacity: 1;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.25rem;
+  border: 2px solid #4f46e5;
+}
+
+.nuxt-content h3 {
+  position: relative;
+  font-size: 1.25rem;
+  display: table;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+fieldset,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
 </style>

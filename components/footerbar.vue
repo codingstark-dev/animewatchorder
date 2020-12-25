@@ -30,25 +30,22 @@
     <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 mt-8 lg:mt-12">
       <nav class="flex flex-wrap justify-center space-x-6">
         <a
-          href="#"
+          href="/privacy-policy"
           class="font-normal text-sm hover:text-gray-100 mb-2"
-        >Privacy</a>
+        >Privacy Policy</a>
         <a
-          href="#"
+          href="/disclaimer"
           class="font-normal text-sm hover:text-gray-100 mb-2"
-        >Content Terms Notice</a>
+        >Disclaimer</a>
         <a
-          href="#"
+          href="/dmca"
           class="font-normal text-sm hover:text-gray-100 mb-2"
-        >Legal</a>
+        >DMCA</a>
         <a
-          href="#"
+          href="/sitemap.xml"
           class="font-normal text-sm hover:text-gray-100 mb-2"
-        >Features</a>
-        <a
-          href="#"
-          class="font-normal text-sm hover:text-gray-100 mb-2"
-        >Landing Pages</a>
+        >SiteMap</a>
+
       </nav>
       <nav class="flex items-center space-x-2">
         <a

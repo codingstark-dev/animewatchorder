@@ -46,9 +46,43 @@ export default {
   ],
   sitemap: {
     path: "/sitemap.xml",
-    hostname: "https://military-eyes.surge.sh/",
-    routes() {
-      return getRoutes();
+    gzip: true,
+    hostname: "https://sageanime.com/",
+    routes: async () => {
+      const { $content } = require("@nuxt/content");
+
+      const posts = await $content("watch-order")
+        .only(["path"])
+        .fetch();
+
+      return posts.map(p => p.path);
+      // const { $content } = require("@nuxt/content");
+
+      // const posts = await $content("watch-order").fetch();
+      // // const works = await $content("works").fetch();
+
+      // // Setup an empty array we will push to.
+      // const routes = [];
+
+      // // Add an entry for the item including lastmod and priorty
+      // // works.forEach(w =>
+      // //   routes.push({
+      // //     url: w.path,
+      // //     priority: 0.8,
+      // //     lastmod: w.updatedAt
+      // //   })
+      // // );
+
+      // posts.forEach(p =>
+      //   routes.push({
+      //     url: p.path,
+      //     priority: 0.8,
+      //     lastmod: p.updatedAt
+      //   })
+      // );
+
+      // // return all routes
+      // return routes;
     }
   },
 
@@ -63,6 +97,7 @@ export default {
       background_color: "#ffffff"
     }
   },
+  env: { baseUrl: process.env.BASE_URL || "http://sageanime.com/" },
   tailwindcss: {
     config: {
       theme: {},
@@ -107,8 +142,8 @@ export default {
     ]
   ],
   purgeCSS: {
-    mode: 'postcss',
-    enabled: (process.env.NODE_ENV === 'production')
+    mode: "postcss",
+    enabled: process.env.NODE_ENV === "production"
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},

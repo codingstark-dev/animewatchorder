@@ -24,6 +24,8 @@
               <img
                 :data-src="item.image"
                 alt=""
+                width="400"
+                height="600"
                 class="object-cover	rounded-xl shadow-sm bg-center w-64 h-72 md:h-96 lg:h-96"
                 v-lazy-load
               >

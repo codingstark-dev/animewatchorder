@@ -5,6 +5,9 @@ export default async () => {
     .fetch();
 
   return files.map(file =>
-    file.path === "/index" ? "/" : "/watch-order/" + file.path
+    file.path === "/index"
+      ? "/"
+      : file.path
+     
   );
 };

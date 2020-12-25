@@ -11,7 +11,7 @@
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/pwa": "^3.3.0",
+    "@nuxtjs/pwa": "^3.3.3",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.12",
@@ -20,7 +20,7 @@
     "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.4.1",
+    "@nuxtjs/tailwindcss": "^3.4.2",
     "autoprefixer": "^9.8.6",
     "nuxt-purgecss": "^1.0.0",
     "postcss": "^7.0.35",
