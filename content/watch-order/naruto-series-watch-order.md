@@ -1,8 +1,9 @@
 ---
 title: Naruto Series Watch Order And Naruto Shippuden Chronological Order
 description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
-image: 'https://wallpapercave.com/wp/wp4813396.jpg'
-previewtitle: Naruto
+image: 'https://1.bp.blogspot.com/-tLJ02x_gtw8/X-pF1ZjpNYI/AAAAAAAAUqs/JN-COI04hyoZUFr6NcMflaCPQyC9IXOvgCLcBGAsYHQ/w437-h640/naruto%2Bseries%2Bin%2Border.webp'
+alt: 'naruto series in order'
+subtitle: Naruto
 headline: Naruto Series Watch Order
 ---
 <p>How to watch the Complete Naruto series in Chronological order including Episodes, Movies, and OVA. This is the best sequence to watch the Naruto series to the best of our knowledge. This includes Naruto, Naruto Shippuden, and Boruto. Watch the complete Naruto series and support the site by buying the box set: Naruto Box Set 1, Box Set 2, Box Set 3

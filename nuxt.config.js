@@ -10,6 +10,7 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
+
       // {
       //   property: "og:image",
       //   content: "/favicon.webp"
@@ -23,12 +24,22 @@ export default {
         content: "#6366f1"
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/SageAnime.png" },
+      {
+        rel: "shortcut icon",
+        href: "/SageAnime.png"
+      },
+      {
+        rel: "apple-touch-icon",
+        href: "/SageAnime.png"
+      }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
-
+  // serverMiddleware: ["~/api/nodemailer"],
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: "~/plugins/card.js", mode: "client" },
@@ -128,6 +139,8 @@ export default {
     // https://go.nuxtjs.dev/content
     "@nuxt/content",
     "@nuxtjs/sitemap",
+    "@nuxtjs/dotenv",
+
     "nuxt-lazy-load",
     [
       "nuxt-compress",

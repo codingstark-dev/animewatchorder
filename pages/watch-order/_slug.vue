@@ -14,7 +14,7 @@
       <h1 class="text-2xl   font-medium">{{article.headline}}</h1>
       <img
         :src="article.image"
-        alt=""
+        :alt="article.alt"
         width="400"
         height="600"
         class=" object-cover  rounded-xl shadow-sm bg-center text-center  m-auto w-56 h-72 shadow-offset-black"
@@ -114,7 +114,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: `https://sageanime.com/watch-order/${this.imageLink}`,
+          content: this.article.image,
         },
         { property: "article:published_time", content: this.article.created },
         { property: "article:modified_time", content: this.article.updated },
@@ -136,7 +136,7 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: `https://sageanime.com/watch-order/${this.imageLink}`,
+          content: this.article.image,
         },
       ],
     };
@@ -162,4 +162,15 @@ export default {
 };
 </script>
 <style >
+.nuxt-content p {
+  font-weight: 500;
+  line-height: 1.625;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.75;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
 </style>

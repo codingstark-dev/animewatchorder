@@ -11,9 +11,11 @@
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.3.3",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
+    "nodemailer": "^6.4.17",
     "nuxt": "^2.14.12",
     "nuxt-compress": "^4.1.0",
     "nuxt-lazy-load": "^1.2.4",

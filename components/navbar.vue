@@ -47,13 +47,14 @@
           <div class="lg:w-1/5 flex items-center pl-4 lg:pl-8 justify-between">
 
             <div class="flex items-center"><a
-                href="https://twitter.com/nuxt_js"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Twitter"
                 name="Twitter"
-                class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500 ml-4 hidden lg:block"
-              ><svg
+                class="text-white hover:text-primary-500 font-md dark-hover:text-primary-500 ml-4 hidden lg:block"
+              > Watch Order
+                <!-- <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -64,7 +65,9 @@
                   class="feather feather-twitter w-5 h-5"
                 >
                   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                </svg></a> <a
+                </svg> -->
+              </a>
+              <a
                 href="https://github.com/nuxt-community/tailwindcss-module"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,7 +99,9 @@
                   class="w-5 h-5"
                 >
                   <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg></button></div>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -144,18 +149,15 @@
             <a
               href="#"
               class="block px-2 py-1 text-white font-semibold rounded hover:bg-indigo-300"
-            >gon</a>
+            >Watch Order</a>
             <a
               href="#"
               class="mt-1 block px-2 py-1 text-white font-semibold rounded  hover:bg-indigo-300"
-            >tanjiro</a>
-            <a
-              href="#"
-              class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-indigo-300"
-            >killua</a>
+            >More Tools Coming Soon</a>
+
             <hr class="my-4">
-            <div class="lg:hidden space-x-2">
-              <!-- <p class="mb-2 text-white uppercase tracking-wider font-bold text-sm lg:text-xs">More</p> -->
+            <!-- <div class="lg:hidden space-x-2">
+             <p class="mb-2 text-white uppercase tracking-wider font-bold text-sm lg:text-xs">More</p>
               <div class="flex items-center space-x-4 "><a
                   href="https://twitter.com/nuxt_js"
                   target="_blank"
@@ -193,7 +195,7 @@
                   >
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                   </svg></a>
-                <!----> <span class="inline-flex"><button
+               <span class="inline-flex"><button
                     aria-label="Color Mode"
                     class="rounded-md  text-white hover:text-primary-500 focus:outline-none transition ease-in-out duration-150"
                   ><svg
@@ -208,7 +210,7 @@
                       <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                     </svg></button></span>
               </div>
-            </div>
+            </div> -->
           </div>
 
         </div>

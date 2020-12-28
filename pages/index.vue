@@ -1,14 +1,19 @@
 <template>
-  <div class="pt-5 px-4 lg:px-8 ">
+  <div class="pt-5 px-4 lg:px-16 ">
     <article>
       <h1 class="text-2xl font-bold text-center text-gray-600 py-2">Anime Series in Chronological Order</h1>
-      <p class="font-medium">Never miss anything while watching your favorite Anime Series again. Browse our lists of Anime below to discover the proper chronological order to watch them, including episodes, OVA's, movies, and more! Check back often, we are constantly updating our list with new Anime and updated orders. Also subscribe to our mailing list to get updates when new items are published.</p>
+      <p class="font-medium">
+        <nuxt-content
+          :document="home"
+          class="p-2"
+        />
+      </p>
     </article>
     <hr class="my-10">
     <section>
       <h2 class="text-lg tracking-tight font-bold text-gray-900 font-mono  mb-8">Featured
       </h2>
-      <div class="grid grid-cols-2 justify-center sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 xl:gap-8 font-semibold text-gray-900 text-center  ">
+      <div class="grid grid-cols-2 justify-center sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 xl:gap-8 font-semibold text-gray-900 text-center py-5 ">
         <div
           v-for="item in article"
           :key="item.title"
@@ -23,14 +28,14 @@
             >
               <img
                 :data-src="item.image"
-                alt=""
+                :alt="item.alt"
                 width="400"
                 height="600"
                 class="object-cover	rounded-xl shadow-sm bg-center w-64 h-72 md:h-96 lg:h-96"
                 v-lazy-load
               >
 
-              <span class="opacity-70 font-bold ">{{item.title}}</span> <span class="absolute bg-green-400  top-2 left-1 text-black font-bold rounded-full text-sm py-0.5 px-2  text-white">Current Popular</span></a>
+              <span class="opacity-70 font-bold ">{{item.subtitle}}</span> <span class="absolute bg-green-400  top-2 left-1 text-black font-bold rounded-full text-sm py-0.5 px-2  text-white">Current Popular</span></a>
           </div>
 
         </div>
@@ -56,7 +61,8 @@ export default {
     error,
   }) {
     const article = await $content("watch-order").fetch();
-    return { article };
+    const home = await $content("home").fetch();
+    return { article, home };
   },
 };
 </script>
