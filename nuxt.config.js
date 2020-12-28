@@ -5,23 +5,40 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "animewatchorder",
+    title: "Anime Series in Chronological Order | Episodes, Movies, OVAs",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Watch Anime In Chronological Order, including Episodes, OVAs, Movies, and more!"
+      },
+      // {
+      //   property: "og:title",
+      //   conetent: "Anime Series in Chronological Order | Episodes, Movies, OVAs"
+      // },
+      // {
+      //   property: "og:description",
+      //   conetent:
+      //     "Watch Anime In Chronological Order, including Episodes, OVAs, Movies, and more!"
+      // },
       // {
       //   property: "og:image",
-      //   content: "/favicon.webp"
+      //   content: "/SageAnime.png"
       // },
       // {
       //   property: "og:url",
-      //   content: "https://instareel.site/"
+      //   content: "https://sageanime.com/"
       // },
       {
         name: "theme-color",
         content: "#6366f1"
+      },
+      {
+        name: "google-site-verification",
+        content: "uetl84zhqgERJw7QsqX0lFxwtOXz-DLdivcS5hSIiKk"
       }
     ],
     link: [
@@ -105,7 +122,49 @@ export default {
       name: "SageAnime",
       short_name: "SageAnime",
       theme_color: "#6366f1",
-      background_color: "#ffffff"
+      background_color: "#ffffff",
+      icons: [
+        {
+          src: "/SageAnime.png",
+          sizes: "72x72",
+          type: "image/png"
+        },
+        {
+          src: "/SageAnime.png",
+          sizes: "96x96",
+          type: "image/png"
+        },
+        {
+          src: "/SageAnime.png",
+          sizes: "128x128",
+          type: "image/png"
+        },
+        {
+          src: "/SageAnime.png",
+          sizes: "144x144",
+          type: "image/png"
+        },
+        {
+          src: "/SageAnime.png",
+          sizes: "152x152",
+          type: "image/png"
+        },
+        {
+          src: "/SageAnime.png",
+          sizes: "192x192",
+          type: "image/png"
+        },
+        {
+          src: "/SageAnime.png",
+          sizes: "384x384",
+          type: "image/png"
+        },
+        {
+          src: "/SageAnime.png",
+          sizes: "512x512",
+          type: "image/png"
+        }
+      ]
     }
   },
   env: { baseUrl: process.env.BASE_URL || "http://sageanime.com/" },

@@ -80,6 +80,13 @@ pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.nuxt-content h4 {
+  position: relative;
+  font-size: 1.5rem;
+  display: table;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .nuxt-content a {
   color: #4f46e5;
 }

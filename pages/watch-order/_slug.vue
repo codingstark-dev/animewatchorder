@@ -116,22 +116,22 @@ export default {
           property: "og:image",
           content: this.article.image,
         },
-        { property: "article:published_time", content: this.article.created },
-        { property: "article:modified_time", content: this.article.updated },
-        {
-          property: "article:tag",
-          content: this.article.tags ? this.article.tags.toString() : "",
-        },
+        // { property: "article:published_time", content: this.article.created },
+        // { property: "article:modified_time", content: this.article.updated },
+        // {
+        //   property: "article:tag",
+        //   content: this.article.tags ? this.article.tags.toString() : "",
+        // },
         // Twitter
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: this.completeTitle,
+          content: this.article.title,
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: this.articleDescription,
+          content: this.article.description,
         },
         {
           hid: "twitter:image",
