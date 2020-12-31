@@ -2,36 +2,12 @@ import getRoutes from "./utils/getRoutes";
 
 export default {
   target: "static",
-
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "Anime Series in Chronological Order | Episodes, Movies, OVAs",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Watch Anime In Chronological Order, including Episodes, OVAs, Movies, and more!"
-      },
-      // {
-      //   property: "og:title",
-      //   conetent: "Anime Series in Chronological Order | Episodes, Movies, OVAs"
-      // },
-      // {
-      //   property: "og:description",
-      //   conetent:
-      //     "Watch Anime In Chronological Order, including Episodes, OVAs, Movies, and more!"
-      // },
-      // {
-      //   property: "og:image",
-      //   content: "/SageAnime.png"
-      // },
-      // {
-      //   property: "og:url",
-      //   content: "https://sageanime.com/"
-      // },
+  
       {
         name: "theme-color",
         content: "#6366f1"
@@ -60,7 +36,8 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: "~/plugins/card.js", mode: "client" },
-    { src: "~/plugins/disqus.js" }
+    { src: "~/plugins/disqus.js" },
+    { src: "~plugins/ga.js", mode: "client" }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

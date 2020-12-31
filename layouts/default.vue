@@ -87,6 +87,18 @@ pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.nuxt-content h4::after {
+  content: " ";
+  width: 80%;
+  display: block;
+
+  --border-opacity: 1;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.25rem;
+  border: 2px solid #4f46e5;
+}
 .nuxt-content a {
   color: #4f46e5;
 }

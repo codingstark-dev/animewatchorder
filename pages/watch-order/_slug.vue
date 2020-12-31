@@ -1,6 +1,5 @@
 <template>
   <article class="  overflow-hidden  ">
-
     <!-- <div class=" text-center items-center  justify-center bg-blue-100 lg:bg-transparent">
       <br>
       <h1 class="text-2xl font-medium">{{article.title}}</h1>
@@ -114,7 +113,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: this.article.image,
+          content: "https://sageanime.com/SageAnime.png",
         },
         // { property: "article:published_time", content: this.article.created },
         // { property: "article:modified_time", content: this.article.updated },
@@ -136,7 +135,13 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: this.article.image,
+          content: "https://sageanime.com/SageAnime.png",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: `https://sageanime.com/watch-order/${this.$route.path}`,
         },
       ],
     };
@@ -148,7 +153,7 @@ export default {
   computed: {
     disqusConfig() {
       return {
-        url: `https://sageanime.com/${this.$route.path}`,
+        url: `https://sageanime.com/watch-order/${this.$route.path}`,
         identifier: this.article.slug,
         title: this.article.headline,
       };

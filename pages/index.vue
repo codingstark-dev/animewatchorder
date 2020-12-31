@@ -47,6 +47,60 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.home.title,
+      titleTemplate: "%s - SageAnime",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.home.description,
+        },
+        // Open Graph
+        { hid: "og:title", property: "og:title", content: this.home.title },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.home.description,
+        },
+        { hid: "og:type", property: "og:type", content: "home" },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: this.home.image,
+        },
+        // { property: "home:published_time", content: this.home.created },
+        // { property: "home:modified_time", content: this.home.updated },
+        // {
+        //   property: "home:tag",
+        //   content: this.home.tags ? this.home.tags.toString() : "",
+        // },
+        // Twitter
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.home.title,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.home.description,
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: this.home.image,
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: `https://sageanime.com/`,
+        },
+      ],
+    };
+  },
   async asyncData({
     $content,
     isDev,
