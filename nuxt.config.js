@@ -7,7 +7,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-  
+
       {
         name: "theme-color",
         content: "#6366f1"
@@ -144,7 +144,7 @@ export default {
       ]
     }
   },
-  env: { baseUrl: process.env.BASE_URL || "http://sageanime.com/" },
+  env: { baseUrl: process.env.BASE_URL || "https://sageanime.com/" },
   tailwindcss: {
     config: {
       theme: {},
@@ -220,5 +220,17 @@ export default {
         removeEmptyElements: true
       }
     }
+  },
+  generate: {
+    async routes() {
+      const { $content } = require("@nuxt/content");
+
+      const posts = await $content("watch-order")
+        .only(["path"])
+        .fetch();
+
+      return posts.map(p => p.path);
+    },
+    fallback: "404.html"
   }
 };

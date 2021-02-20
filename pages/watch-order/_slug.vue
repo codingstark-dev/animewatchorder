@@ -82,7 +82,7 @@
     <client-only>
       <div class="p-8">
 
-        <Disqus :pageConfig="disqusConfig" />
+        <Disqus />
       </div>
     </client-only>
 
@@ -150,15 +150,15 @@ export default {
     colorCard,
   },
 
-  computed: {
-    disqusConfig() {
-      return {
-        url: `https://sageanime.com/watch-order/${this.$route.path}`,
-        identifier: this.article.slug,
-        title: this.article.headline,
-      };
-    },
-  },
+  // computed: {
+  //   disqusConfig() {
+  //     return {
+  //       url: `https://sageanime.com/watch-order/${this.$route.path}`,
+  //       identifier: this.article.slug,
+  //       title: this.article.headline,
+  //     };
+  //   },
+  // },
   async asyncData({ $content, params }) {
     const article = await $content("watch-order", params.slug).fetch();
 
