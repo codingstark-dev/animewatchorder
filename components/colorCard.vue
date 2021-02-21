@@ -1,8 +1,8 @@
 <template>
   <div>
 
-    <div v-if="text !== undefined">
-      <div
+    <ol v-if="text !== undefined">
+      <li
         v-for="(item, index) in text"
         :key="index"
         class="pb-5 lg:justify-center lg:flex "
@@ -17,8 +17,10 @@
             {{item}}
           </span>
         </div>
-      </div>
-    </div>
+
+      </li>
+    </ol>
+
   </div>
 </template>
 
@@ -34,8 +36,14 @@ export default {
     },
     // color: { type: Number, required: true },
   },
+  methods: {
+    selectIndex(Index) {
+      this.ItemIndex = Index;
+    },
+  },
   data() {
     return {
+      ItemIndex: null,
       colors: ["bg-blue-100", "bg-pink-200", "bg-yellow-100", "bg-green-200"],
     };
   },

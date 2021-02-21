@@ -25,7 +25,7 @@
             :style="{ backgroundImage: 'url(' + item.image + ')' }"
           ></div> -->
           <div class="flex items-center"><a
-              class="relative  "
+              class="relative"
               :href="'watch-order/'+item.slug"
             >
               <img

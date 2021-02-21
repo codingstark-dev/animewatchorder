@@ -70,14 +70,14 @@ pre {
   position: relative;
   font-size: 1.5rem;
   display: table;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 .nuxt-content h1 {
   position: relative;
   font-size: 1.5rem;
   display: table;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 .nuxt-content h4 {
@@ -123,7 +123,7 @@ pre {
   position: relative;
   font-size: 1.25rem;
   display: table;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 

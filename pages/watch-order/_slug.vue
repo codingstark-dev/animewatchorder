@@ -9,7 +9,10 @@
         :style="{ backgroundImage: 'url(' + article.image + ')' }"
       ></div><br>
     </div> -->
-    <div class="py-10 text-center space-y-5  bg-blue-100">
+    <div
+      class="py-10 text-center space-y-5"
+      :style="{'background-color': article.bgcolor}"
+    >
       <h1 class="text-2xl   font-medium">{{article.headline}}</h1>
       <img
         :src="article.image"
@@ -76,6 +79,15 @@
 
       </nav>
       <hr>
+      <br>
+      <p class="font-semibold opacity-70">How to watch the {{article.subtitle}} series in Chronological order, including Episodes, Movies, OVA’s and Fillers. This is the best sequence that i got of {{article.subtitle}}, If {{article.subtitle}} is in wrong order please notify us via <a
+          class="text-indigo-600"
+          :href="'mailto:sageanime.com@gmail.com?subject=Wrong%20watch%20order%20of' +' ' + article.subtitle"
+        >Mail</a>.
+
+      </p>
+      <br>
+      <hr>
       <nuxt-content :document="article" />
     </div>
     <hr>
@@ -113,10 +125,30 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: "https://sageanime.com/SageAnime.png",
+          content: this.article.image,
         },
-        // { property: "article:published_time", content: this.article.created },
-        // { property: "article:modified_time", content: this.article.updated },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: this.article.keyword,
+        },
+        {
+          hid: "og:site_name",
+          property: "og:site_name",
+          content: "SageAnime",
+        },
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "article",
+        },
+        {
+          hid: "og:locale",
+          property: "og:locale",
+          content: "en_US",
+        },
+        { property: "article:published_time", content: this.article.created },
+        { property: "article:modified_time", content: this.article.updated },
         // {
         //   property: "article:tag",
         //   content: this.article.tags ? this.article.tags.toString() : "",
@@ -135,7 +167,7 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: "https://sageanime.com/SageAnime.png",
+          content: this.article.image,
         },
       ],
       link: [
