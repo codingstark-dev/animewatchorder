@@ -36,7 +36,7 @@ Naruto is a series that I believe has gotten a little bit over criticized over t
 ]'></card-color>
 </client-only>
 
-## Naruto Shippuden
+### Naruto Shippuden
 
 <client-only>
 <card-color :ind='13' :text='[

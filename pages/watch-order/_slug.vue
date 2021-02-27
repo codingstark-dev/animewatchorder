@@ -1,104 +1,59 @@
 <template>
-  <article class="  overflow-hidden  ">
-    <!-- <div class=" text-center items-center  justify-center bg-blue-100 lg:bg-transparent">
-      <br>
-      <h1 class="text-2xl font-medium">{{article.title}}</h1>
-      <br>
-      <div
-        class="cover-art fifty-fifty"
-        :style="{ backgroundImage: 'url(' + article.image + ')' }"
-      ></div><br>
-    </div> -->
-    <div
-      class="py-10 text-center space-y-5"
-      :style="{'background-color': article.bgcolor}"
-    >
-      <h1 class="text-2xl   font-medium">{{article.headline}}</h1>
-      <img
-        :src="article.image"
-        :alt="article.alt"
-        width="400"
-        height="600"
-        class=" object-cover  rounded-xl shadow-sm bg-center text-center  m-auto w-56 h-72 shadow-offset-black"
-      >
-    </div>
+  <div>
+    <blogheader :article="article" />
+
     <hr>
-    <div class="flex flex-col  space-y-3 sm:flex-row text-xs sm:space-y-0 sm:space-x-4 p-5 ">
-      <!-- <div class="w-32 flex-shrink-0">
-        <div class="h-10 flex flex-col justify-center">
-          <div class="text-sm font-semibold text-gray-900">Yellow</div>
-          <div><code class="text-xs text-gray-500">colors.amber</code></div>
-        </div>
-      </div> -->
-      <div class="w-full   flex grid justify-evenly grid-cols-2  lg:grid-cols-4 gap-x-4 gap-y-3 2xl:gap-x-2 m-auto lg:pl-20">
-        <div class="space-x-1.5 flex items-center">
-          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-blue-100"></div>
+    <anime-blog-index />
+    <hr>
+    <main class="pt-8 pb-20 lg:pt-8 lg:pb-28 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-24 grid-cols-1 lg:grid-cols-3 article-toc">
+          <section class="block col-span-1 lg:col-span-2 mt-0">
+            <article class="prose lg:prose-xl">
 
-          <div class="font-bold text-sm">Episodes</div>
+              <div class="px-5">
 
-        </div>
-        <div class="space-x-1.5 lg:col-auto  flex items-center   col-span-2 ">
-          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-pink-200"></div>
+                <toc-mob :article="article" />
 
-          <div class="font-bold text-sm">Original Video Animation (OVA)
-          </div>
+                <br>
+                <p class="font-semibold opacity-70">How to watch the {{article.subtitle}} series in Chronological order, including Episodes, Movies, OVA’s and Fillers. This is the best sequence that i got of {{article.subtitle}}, If {{article.subtitle}} is in wrong order please notify us via <a
+                    class="text-indigo-600"
+                    :href="'mailto:sageanime.com@gmail.com?subject=Wrong%20watch%20order%20of' +' ' + article.subtitle"
+                  >Mail</a>.
 
-        </div>
-        <div class="space-x-1.5 flex items-center">
-          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-yellow-100"></div>
+                </p>
+                <br>
+                <hr>
+                <nuxt-content :document="article" />
+              </div>
+              <hr>
 
-          <div class="font-bold text-sm">Movie</div>
+              <div class="bg-infoblue dark:bg-tokyosky border-2 text-white p-4 my-8 infobox overflow-hidden shadow-sm rounded-lg twitter-cta cvis border-infoblue">
+                <p class="m-0 text-black text-sm md:text-2xl text-center text-base">Enjoyed the article? Consider sharing on Social Media!</p>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex flex-col dark:text-gray-300 text-gray-900">
+                  <p class="text-lg mb-0 uppercase">Last updated</p> <span class="text-gray-600">{{formatDate(article.updated)}}</span>
+                </div>
 
-        </div>
+              </div>
+              <br>
+              <hr>
+              <client-only>
+                <div class="p-8">
 
-        <div class="space-x-1.5 flex items-center">
-          <div class="h-10 w-10 rounded-md ring-1 ring-inset ring-black ring-opacity-0 bg-green-200"></div>
+                  <Disqus />
+                </div>
+              </client-only>
 
-          <div class="font-bold text-sm">Manga</div>
+            </article>
+          </section>
 
+          <toc-web :article="article" />
         </div>
       </div>
-    </div>
-    <hr>
-    <div class="px-5">
-      <nav class="py-4 lg:py-8 lg:pl-8 lg:pr-2">
-        <p class="mb-3 lg:mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Jump On The Point</p>
-        <ul>
-          <li
-            v-for="link of article.toc"
-            :key="link.id"
-            class="text-gray-700 dark:text-gray-300 border-t border-dashed dark:border-gray-800 first:border-t-0 font-medium"
-            :class="{ 'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
-          >
-            <NuxtLink
-              :to="`#${link.id}`"
-              class="block text-sm scrollactive-item transition-padding ease-in-out duration-300 hover:pl-1 py-2 text-primary-500"
-            >{{ link.text  }}</NuxtLink>
-          </li>
-        </ul>
-
-      </nav>
-      <hr>
-      <br>
-      <p class="font-semibold opacity-70">How to watch the {{article.subtitle}} series in Chronological order, including Episodes, Movies, OVA’s and Fillers. This is the best sequence that i got of {{article.subtitle}}, If {{article.subtitle}} is in wrong order please notify us via <a
-          class="text-indigo-600"
-          :href="'mailto:sageanime.com@gmail.com?subject=Wrong%20watch%20order%20of' +' ' + article.subtitle"
-        >Mail</a>.
-
-      </p>
-      <br>
-      <hr>
-      <nuxt-content :document="article" />
-    </div>
-    <hr>
-    <client-only>
-      <div class="p-8">
-
-        <Disqus />
-      </div>
-    </client-only>
-
-  </article>
+    </main>
+  </div>
 </template>
 <script>
 import colorCard from "~/components/colorCard";
@@ -178,6 +133,14 @@ export default {
       ],
     };
   },
+
+  methods: {
+    formatDate(date) {
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(date).toLocaleDateString("en", options);
+    },
+  },
+
   components: {
     colorCard,
   },

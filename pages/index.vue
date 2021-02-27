@@ -10,40 +10,40 @@
           />
         </p>
       </client-only>
-    </article>
-    <hr class="my-10">
-    <section>
-      <h2 class="text-lg tracking-tight font-bold text-gray-900 font-mono  mb-8">Featured
-      </h2>
-      <div class="grid grid-cols-2 justify-center sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 xl:gap-8 font-semibold text-gray-900 text-center py-5 ">
-        <div
-          v-for="item in article"
-          :key="item.title"
-        >
-          <!-- <div
+
+      <hr class="my-10">
+      <section>
+        <h2 class="text-lg tracking-tight font-bold text-gray-900 font-mono  mb-8">Featured
+        </h2>
+        <div class="grid grid-cols-2 justify-center sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 xl:gap-8 font-semibold text-gray-900 text-center py-5 ">
+          <div
+            v-for="item in article"
+            :key="item.title"
+          >
+            <!-- <div
             class=" bg-center bg-cover bg-no-repeat	div-block-2"
             :style="{ backgroundImage: 'url(' + item.image + ')' }"
           ></div> -->
-          <div class="flex items-center"><a
-              class="relative"
-              :href="'watch-order/'+item.slug"
-            >
-              <img
-                :data-src="item.image"
-                :alt="item.alt"
-                width="400"
-                height="600"
-                class="object-cover	rounded-xl shadow-sm bg-center w-64 h-72 md:h-96 lg:h-96"
-                v-lazy-load
+            <div class="flex items-center"><a
+                class="relative"
+                :href="'watch-order/'+item.slug"
               >
+                <img
+                  :data-src="item.image"
+                  :alt="item.alt"
+                  width="400"
+                  height="600"
+                  class="object-cover	rounded-xl shadow-sm bg-center w-64 h-72 md:h-96 lg:h-96"
+                  v-lazy-load
+                >
 
-              <span class="opacity-70 font-bold ">{{item.subtitle}}</span> <span class="absolute bg-green-400  top-2 left-1 text-black font-bold rounded-full text-sm py-0.5 px-2  text-white">Current Popular</span></a>
+                <span class="opacity-70 font-bold ">{{item.subtitle}}</span> <span class="absolute bg-green-400  top-2 left-1 text-black font-bold rounded-full text-sm py-0.5 px-2  text-white">Current Popular</span></a>
+            </div>
+
           </div>
-
         </div>
-      </div>
-    </section>
-
+      </section>
+    </article>
   </div>
 </template>
 

@@ -11,7 +11,7 @@ created: 2021-02-21T14:31:52+00:00
 updated: 2021-02-21T14:31:52+00:00	
 ---
 
-### Season 1
+## Season 1
 
 <client-only>
 <card-color :text='[
@@ -35,7 +35,7 @@ updated: 2021-02-21T14:31:52+00:00
 ]'></card-color>
 </client-only>
 
-### Season 2
+## Season 2
 
 <client-only>
 <card-color :ind=4 :text='[
