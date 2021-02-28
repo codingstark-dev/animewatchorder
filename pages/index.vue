@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-5 px-4 lg:px-16 ">
+  <div class="pt-20 px-4 lg:px-16 ">
     <article>
       <h1 class="text-2xl font-bold text-center text-gray-600 py-2">Anime Series in Chronological Order</h1>
       <client-only>

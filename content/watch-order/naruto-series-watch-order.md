@@ -7,8 +7,6 @@ subtitle: Naruto
 headline: Naruto Series Watch Order
 bgcolor: '#dbeafe'
 keyword: naruto watch order, naruto series in order, naruto chronological order, naruto order to watch, naruto series in chronological order, naruto series order, naruto chronological order to watch
-created: 2021-02-21T13:06:59+00:00
-updated: 2021-02-21T13:06:59+00:00	
 ---
 ## Short Naruto Intro
 
@@ -36,7 +34,7 @@ Naruto is a series that I believe has gotten a little bit over criticized over t
 ]'></card-color>
 </client-only>
 
-### Naruto Shippuden
+## Naruto Shippuden
 
 <client-only>
 <card-color :ind='13' :text='[

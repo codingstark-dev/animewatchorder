@@ -1,7 +1,6 @@
 <template>
   <div>
     <blogheader :article="article" />
-
     <hr>
     <anime-blog-index />
     <hr>
@@ -33,7 +32,7 @@
               </div>
               <div class="flex justify-between">
                 <div class="flex flex-col dark:text-gray-300 text-gray-900">
-                  <p class="text-lg mb-0 uppercase">Last updated</p> <span class="text-gray-600">{{formatDate(article.updated)}}</span>
+                  <p class="text-lg mb-0 uppercase">Last updated</p> <span class="text-gray-600">{{formatDate(article.updatedAt)}}</span>
                 </div>
 
               </div>
@@ -102,8 +101,8 @@ export default {
           property: "og:locale",
           content: "en_US",
         },
-        { property: "article:published_time", content: this.article.created },
-        { property: "article:modified_time", content: this.article.updated },
+        { property: "article:published_time", content: this.article.createdAt },
+        { property: "article:modified_time", content: this.article.updatedAt },
         // {
         //   property: "article:tag",
         //   content: this.article.tags ? this.article.tags.toString() : "",
