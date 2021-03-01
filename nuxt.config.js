@@ -55,12 +55,19 @@ export default {
     hostname: "https://sageanime.com/",
     routes: async () => {
       const { $content } = require("@nuxt/content");
+      const routes = [];
 
-      const posts = await $content("watch-order")
-        .only(["path"])
-        .fetch();
+      const posts = await $content("watch-order").fetch();
+      
+      posts.forEach(p =>
+        routes.push({
+          url: p.path,
+          priority: 0.8,
+          lastmod: p.updatedAt
+        })
+      );
 
-      return posts.map(p => p.path);
+      return routes;
       // const { $content } = require("@nuxt/content");
 
       // const posts = await $content("watch-order").fetch();
@@ -77,14 +84,6 @@ export default {
       // //     lastmod: w.updatedAt
       // //   })
       // // );
-
-      // posts.forEach(p =>
-      //   routes.push({
-      //     url: p.path,
-      //     priority: 0.8,
-      //     lastmod: p.updatedAt
-      //   })
-      // );
 
       // // return all routes
       // return routes;
