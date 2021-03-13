@@ -1,4 +1,6 @@
 ---
+title: DMCA of SageAnime.com
+description: DMCA of SageAnime.com
 ---
 <h1>DMCA policy</h1>
 <p>This Digital Millennium Copyright Act policy (&quot;Policy&quot;) applies to the <a target="_blank" rel="nofollow" href="https://sageanime.com">sageanime.com</a> website (&quot;Website&quot; or &quot;Service&quot;) and any of its related products and services (collectively, &quot;Services&quot;) and outlines how this Website operator (&quot;Operator&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;) addresses copyright infringement notifications and how you (&quot;you&quot; or &quot;your&quot;) may submit a copyright infringement complaint.</p>

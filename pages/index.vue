@@ -118,6 +118,7 @@ export default {
   }) {
     const article = await $content("watch-order").fetch();
     const home = await $content("home").fetch();
+
     return { article, home };
   },
 };

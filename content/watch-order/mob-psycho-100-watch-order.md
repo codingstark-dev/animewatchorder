@@ -7,6 +7,12 @@ subtitle: Mob Psycho 100
 headline: Mob Psycho 100 Watch Order
 bgcolor: '#dbeafe'
 keyword: mob psycho 100 watch order, correct order to watch mob psycho 100, mob psycho 100 watch order reddit, what order should i watch mob psycho, what order should i watch mob psycho 100,  mob psycho 100 chronological order
+genres: 
+  - Action 
+  - Slice of Life
+  - Comedy
+  - Supernatural
+
 ---
 
 ## Season 1

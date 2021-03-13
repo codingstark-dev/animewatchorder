@@ -7,6 +7,13 @@ subtitle: Naruto
 headline: Naruto Series Watch Order
 bgcolor: '#dbeafe'
 keyword: naruto watch order, naruto series in order, naruto chronological order, naruto order to watch, naruto series in chronological order, naruto series order, naruto chronological order to watch
+genres: 
+- Adventure
+- Comedy
+- Martial Arts
+- Shounen
+- Super Power
+- Action
 ---
 ## Short Naruto Intro
 

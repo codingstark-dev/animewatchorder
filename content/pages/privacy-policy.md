@@ -1,15 +1,14 @@
 ---
-title: Getting started
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+title: Privacy Policy of SageAnime.com
+description: Privacy Policy of SageAnime.com
 ---
-
 <h1>Privacy Policy for SageAnime</h1>
 
 <p>At SageAnime, accessible from https://sageanime.com/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by SageAnime and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
-<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in SageAnime. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a href="https://www.privacypolicyonline.com">Free Privacy Policy Generator</a>.</p>
+<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regard to the information that they shared and/or collect in SageAnime. This policy is not applicable to any information collected offline or via channels other than this website. </p>
 
 <h2>Consent</h2>
 
@@ -26,12 +25,12 @@ description: 'Empower your NuxtJS application with @nuxt/content module: write i
 <p>We use the information we collect in various ways, including to:</p>
 
 <ul>
-<li>Provide, operate, and maintain our webste</li>
-<li>Improve, personalize, and expand our webste</li>
-<li>Understand and analyze how you use our webste</li>
+<li>Provide, operate, and maintain our website</li>
+<li>Improve, personalize, and expand our website</li>
+<li>Understand and analyze how you use our website</li>
 <li>Develop new products, services, features, and functionality</li>
-<li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the webste, and for marketing and promotional purposes</li>
-<li>Send you emails</li>
+<li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+<li>Send your emails</li>
 <li>Find and prevent fraud</li>
 </ul>
 
@@ -87,4 +86,4 @@ description: 'Empower your NuxtJS application with @nuxt/content module: write i
 
 <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
 
-<p>SageAnime does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+<p>SageAnime does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately, and we will do our best efforts to promptly remove such information from our records.</p>

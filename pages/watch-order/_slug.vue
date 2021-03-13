@@ -4,16 +4,29 @@
     <hr>
     <anime-blog-index />
     <hr>
-    <main class="pt-8 pb-20 lg:pt-8 lg:pb-28 relative">
+
+    <main class="pt-4 pb-20 lg:pt-8 lg:pb-28 relative">
+
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid gap-24 grid-cols-1 lg:grid-cols-3 article-toc">
           <section class="block col-span-1 lg:col-span-2 mt-0">
             <article class="prose lg:prose-xl">
-
+              <div class="flex text-center flex-wrap p-4 ">
+                <div
+                  class=" justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full text-white bg-indigo-600 border border-indigo-200 "
+                  v-for="(item, index) in article.genres"
+                  :key="index"
+                >
+                  <NuxtLink :to="'tags/'+item">
+                    <div class=" text-xs font-normal leading-none max-w-full flex-initial">{{item}}</div>
+                  </NuxtLink>
+                </div>
+              </div>
+              <hr>
               <div class="px-5">
 
                 <toc-mob :article="article" />
-
+                <hr>
                 <br>
                 <p class="font-semibold opacity-70">How to watch the {{article.subtitle}} series in Chronological order, including Episodes, Movies, OVA’s and Fillers. This is the best sequence that i got of {{article.subtitle}}, If {{article.subtitle}} is in wrong order please notify us via <a
                     class="text-indigo-600"
@@ -38,7 +51,15 @@
               </div>
               <br>
               <hr>
+
               <client-only>
+                <also-read :article="alsoLike" />
+                <br>
+                <prev-next
+                  :nameRoute="'watch-order'"
+                  :prev="prev"
+                  :next="next"
+                />
                 <div class="p-8">
 
                   <Disqus />
@@ -58,6 +79,11 @@
 import colorCard from "~/components/colorCard";
 
 export default {
+  data() {
+    return {
+      colors: ["bg-blue-100", "bg-pink-200", "bg-yellow-100", "bg-green-200"],
+    };
+  },
   head() {
     return {
       title: this.article.title,
@@ -154,9 +180,25 @@ export default {
   //   },
   // },
   async asyncData({ $content, params }) {
+    var alsoLike = [];
     const article = await $content("watch-order", params.slug).fetch();
-
-    return { article };
+    const relatedPost = await $content("watch-order")
+      .where({ genres: { $containsAny: article.genres } })
+      .limit(2)
+      .fetch();
+    relatedPost.forEach((element) => {
+      if (element.slug !== article.slug) {
+        alsoLike.push(element);
+        // console.log(element);
+      }
+      // alsoLike.push(element);
+    });
+    const [prev, next] = await $content("watch-order")
+      .only(["title", "slug"])
+      .sortBy("createdAt", "asc")
+      .surround(params.slug)
+      .fetch();
+    return { article, prev, next, alsoLike };
   },
 };
 </script>
