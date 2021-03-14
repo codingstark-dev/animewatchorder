@@ -58,7 +58,7 @@ export default {
       const routes = [];
 
       const posts = await $content("watch-order").fetch();
-      
+
       posts.forEach(p =>
         routes.push({
           url: p.path,

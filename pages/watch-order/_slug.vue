@@ -17,7 +17,7 @@
                   v-for="(item, index) in article.genres"
                   :key="index"
                 >
-                  <NuxtLink :to="'tags/'+item">
+                  <NuxtLink :to="'/watch-order/tags/'+item">
                     <div class=" text-xs font-normal leading-none max-w-full flex-initial">{{item}}</div>
                   </NuxtLink>
                 </div>
@@ -40,9 +40,16 @@
               </div>
               <hr>
 
-              <div class="bg-infoblue dark:bg-tokyosky border-2 text-white p-4 my-8 infobox overflow-hidden shadow-sm rounded-lg twitter-cta cvis border-infoblue">
+              <div class="bg-infoblue dark:bg-tokyosky border-2 text-white p-4 my-4 infobox overflow-hidden shadow-sm rounded-lg twitter-cta cvis border-infoblue">
                 <p class="m-0 text-black text-sm md:text-2xl text-center text-base">Enjoyed the article? Consider sharing on Social Media!</p>
               </div>
+              <client-only>
+                <social-share
+                  :description="article.description"
+                  :shareLink="`https://sageanime.com${article.path}`"
+                />
+              </client-only>
+              <br>
               <div class="flex justify-between">
                 <div class="flex flex-col dark:text-gray-300 text-gray-900">
                   <p class="text-lg mb-0 uppercase">Last updated</p> <span class="text-gray-600">{{formatDate(article.updatedAt)}}</span>
@@ -53,6 +60,7 @@
               <hr>
 
               <client-only>
+
                 <also-read :article="alsoLike" />
                 <br>
                 <prev-next
@@ -77,6 +85,7 @@
 </template>
 <script>
 import colorCard from "~/components/colorCard";
+import SocialShare from "~/components/socialShare.vue";
 
 export default {
   data() {
@@ -153,7 +162,7 @@ export default {
       link: [
         {
           rel: "canonical",
-          href: `https://sageanime.com/watch-order/${this.$route.path}`,
+          href: `https://sageanime.com/${this.$route.path}`,
         },
       ],
     };
@@ -168,6 +177,7 @@ export default {
 
   components: {
     colorCard,
+    SocialShare,
   },
 
   // computed: {

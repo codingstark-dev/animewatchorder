@@ -70,7 +70,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: this.home.image,
+          content: "https://sageanime.com/SageAnime.png",
         },
         // { property: "home:published_time", content: this.home.created },
         // { property: "home:modified_time", content: this.home.updated },
@@ -92,7 +92,7 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: this.home.image,
+          content: "https://sageanime.com/SageAnime.png",
         },
       ],
       link: [

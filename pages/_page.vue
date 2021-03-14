@@ -69,9 +69,7 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    console.log(params.page);
     const article = await $content("pages", params.page).fetch();
-    console.log(article);
     return {
       article,
     };
