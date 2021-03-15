@@ -1,3 +1,2 @@
 User-agent: * 
-Crawl-Delay: 20
 Sitemap: https://sageanime.com/sitemap.xml

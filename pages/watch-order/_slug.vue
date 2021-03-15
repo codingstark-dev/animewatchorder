@@ -162,7 +162,7 @@ export default {
       link: [
         {
           rel: "canonical",
-          href: `https://sageanime.com/${this.$route.path}`,
+          href: `https://sageanime.com${this.$route.path}`,
         },
       ],
     };

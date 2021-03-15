@@ -191,7 +191,7 @@ export default {
   ],
   purgeCSS: {
     mode: "postcss",
-    enabled: process.env.NODE_ENV === "production"
+    enabled: false
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
