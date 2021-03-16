@@ -3,6 +3,8 @@ title: Naruto Series Watch Order And Naruto Shippuden Chronological Order
 description: 'How to Watch Naruto | In What Order Should I Watch Naruto | Naruto Series Watch Order |  Naruto Series | Naruto Chronological Order'
 image: 'https://1.bp.blogspot.com/-tLJ02x_gtw8/X-pF1ZjpNYI/AAAAAAAAUqs/JN-COI04hyoZUFr6NcMflaCPQyC9IXOvgCLcBGAsYHQ/w437-h640/naruto%2Bseries%2Bin%2Border.webp'
 alt: 'naruto series in order'
+Aimage: https://1.bp.blogspot.com/-BQssP2Xm0Pw/YFCfHJczq4I/AAAAAAAAVeU/baU6LETNqegTQoM4CFZjCc91O0K8gdDfACLcBGAsYHQ/s16000/Naruto-Series-Watch-Order.webp
+Aalt: 'naruto series in order'
 subtitle: Naruto
 headline: Naruto Series Watch Order
 bgcolor: '#dbeafe'

@@ -3,6 +3,8 @@ title: Mob Psycho 100 Chronological Order
 description:   How to Watch Mob Psycho 100 | Mob Psycho 100 Series Watch Order | In What Order Should I Watch Mob Psycho 100 | Mob Psycho 100 Chronological Order | Mob Psycho 100 Watch Order
 image: https://1.bp.blogspot.com/-fAMXJsj84sA/YDJjAm3PvtI/AAAAAAAAVbM/-MHZ6RSMoFUXzZvu0WXlyyEj3cC7kOg0ACLcBGAsYHQ/w436-h640/mob%2Bpsycho%2B100%2Bwatch%2Border.webp
 alt: mob psycho 100 watch order
+Aimage: https://1.bp.blogspot.com/-OjVbfK0f3ic/YFCfHNuukqI/AAAAAAAAVeQ/YG-2icQmD34XBUcWjVc7KNHDMmFrswBiwCLcBGAsYHQ/s16000/mob-psycho-100-watch-order-sageanime.webp
+Aalt: mob psycho 100 watch order sageanime
 subtitle: Mob Psycho 100
 headline: Mob Psycho 100 Watch Order
 bgcolor: '#dbeafe'

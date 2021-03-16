@@ -15,12 +15,23 @@
           ref="d"
           class="flex pb-4 px-4"
         >
-          <img
-            class="rounded object-fill h-16"
-            :src="item.image"
-            :alt="item.alt"
-            width="100px"
-          >
+          <div v-if="item.Aimage">
+            <img
+              class="rounded object-fill h-16"
+              :src="item.Aimage"
+              :alt="item.Aalt"
+              width="100px"
+            >
+          </div>
+          <div v-else>
+            <img
+              class="rounded object-fill h-16"
+              :src="item.image"
+              :alt="item.alt"
+              width="100px"
+            >
+          </div>
+
           <h6 class="self-center font-semibold p-1 ">
             {{item.headline}}
           </h6>

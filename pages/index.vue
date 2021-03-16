@@ -52,7 +52,7 @@ export default {
   head() {
     return {
       title: this.home.title,
-      titleTemplate: "%s - SageAnime",
+      titleTemplate: "%s » 🥇 SageAnime",
       meta: [
         {
           hid: "description",

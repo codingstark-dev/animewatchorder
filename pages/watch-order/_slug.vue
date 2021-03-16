@@ -36,6 +36,15 @@
                 </p>
                 <br>
                 <hr>
+                <div v-if="article.Aimage">
+                  <img
+                    :src="article.Aimage"
+                    class="my-4"
+                    :alt="article.Aalt"
+                  >
+                  <hr>
+                </div>
+
                 <nuxt-content :document="article" />
               </div>
               <hr>
@@ -63,11 +72,11 @@
 
                 <also-read :article="alsoLike" />
                 <br>
-                <prev-next
+                <!-- <prev-next
                   :nameRoute="'watch-order'"
                   :prev="prev"
                   :next="next"
-                />
+                /> -->
                 <div class="p-8">
 
                   <Disqus />
@@ -96,7 +105,7 @@ export default {
   head() {
     return {
       title: this.article.title,
-      titleTemplate: "%s - SageAnime",
+      titleTemplate: "%s » 🥇 SageAnime",
       meta: [
         {
           hid: "description",
@@ -114,7 +123,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: this.article.image,
+          content: this.article.Aimage ?? this.article.image,
         },
         {
           hid: "keywords",
@@ -194,7 +203,7 @@ export default {
     const article = await $content("watch-order", params.slug).fetch();
     const relatedPost = await $content("watch-order")
       .where({ genres: { $containsAny: article.genres } })
-      .limit(2)
+      .limit(4)
       .fetch();
     relatedPost.forEach((element) => {
       if (element.slug !== article.slug) {
@@ -203,12 +212,12 @@ export default {
       }
       // alsoLike.push(element);
     });
-    const [prev, next] = await $content("watch-order")
-      .only(["title", "slug"])
-      .sortBy("createdAt", "asc")
-      .surround(params.slug)
-      .fetch();
-    return { article, prev, next, alsoLike };
+    // const [prev, next] = await $content("watch-order")
+    //   .only(["title", "slug"])
+    //   .sortBy("createdAt", "asc")
+    //   .surround(params.slug)
+    //   .fetch();
+    return { article, alsoLike };
   },
 };
 </script>
