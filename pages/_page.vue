@@ -12,7 +12,7 @@ export default {
   head() {
     return {
       title: this.article.title,
-      titleTemplate: "%s - SageAnime",
+      titleTemplate: "%s » 🥇 SageAnime",
       meta: [
         {
           hid: "description",
