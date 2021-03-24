@@ -17,14 +17,31 @@ genres:
 - Super Power
 - Action
 ---
-## Short Naruto Intro
+## Short Naruto Review
 
-<p>
-Naruto is a series that I believe has gotten a little bit over criticized over the years in the anime community as of late it seems like the cool thing to hate on Naruto even I'm no stranger to throwing some shade at it here and there but believe it or not this show was part of my childhood and one of my favorite shows growing up however I think my perception of the show has been altered over the years due to the age of the Internet I've thought about you watching this show, in particular, part one for a while now I remember a lot of the main details like spoiler I guess but Sasuke leaves the village you know Sasuke is trying to kill his brother and some other major details may be but a lot of the details and sequence of events have completely been lost in memory I first watched the show back when I was 11 or 12 to put that into perspective as of January 6th I am 19 so yeah re-watch is a long time coming in this little series I'm just gonna be going over my thoughts.</p>
-<p>
- I rewatched the show I won't be summarizing everything I'm just gonna be going over the things that stand out to me as I watch without any further ado let's get this started how does Naruto hold up young boy naruto? is shunned by everyone for something he's unaware of he's isolated nobody wants to be around him the only father figure he seems to have is Arouca he doesn't have the time to take care of him but still provides some tough love at the end of the episode, it was really touching to see Iruka give up his life to save Naruto he was the first person to believe in him but I found kind of offsetting or some could say hypocritical about this episode was how they portrayed Naruto as someone who wasn't very good at ninjutsu but then he was able to learn the shadow clones in just a few hours it seems speaking of clones this the whole replicating thing in the first the episode is confusing people being able to make clones of themselves is a concept that's never revisited in the series.</p>
+Naruto one of the most famous animated series in the world, I watched the series when I was younger the first Naruto in 2013 then Shippuden around 2015 & 2016 if I remember correctly, i have to admit it is a good show and for me this is the best anime of the big three([Naruto](https://en.wikipedia.org/wiki/Naruto), [Bleach](https://en.wikipedia.org/wiki/Bleach_(TV_series)), [One piece](https://en.wikipedia.org/wiki/One_Piece)).
 
-## Naruto
+### Story
+
+It's a simple shonen story it's not bad of course, but it's not good as berserk or monster, the story is progressing more well even the evolution of Naruto is interesting everything was well until the arc of the fourth great ninja war was created, I mean everything was well the end of the arc Pain was amazing even if there was still other thing to tackle for me, it was the best end for Naruto Shippuden the final fight between the pride of Jiraiya that is Naruto and his regret that is Nagato, it was telling something fucking good. But unfortunately the arc of the fourth great war appeared already the cause of the war is not credible all this because of a girl (who does not care about him) don't tell me that Obito was manipulated because without Rin's death he would never have come back to Madara, the arc was boring over 150 episodes with well animate and boring fights(except for Obito vs Kakashi, Gai vs Madara or Madara vs the Shinobi Alliance) the antagonists who change every 10 minutes from Obito to Madara then black Zetsu and finally Kaguya,and in addition Naruto & Sasuke would be reincarnations of god (Indra & Shura), and their entire journey has been written so Neji was right we can't change fate so all of Naruto's morals no longer make sense, well I think I've talked enough but to make it short roughly Naruto Shippuden it's a 10/10 until the Pain arc but after this arc it's a 8/10 for me (it's totally subjective).
+
+### Art
+
+well the animation is really amazing (one of the best) as it can be terrible at times, but it's understandable to animate an anime of 500 episodes it's really difficult respect for the studio for their effort, and yes the fight Pain vs Naruto is very well animated message for the haters.
+
+### Sound
+
+Currently, this is the biggest point of the anime for me, it is a minimum top 3 in terms of OST especially sad OST (my favorites are Guren, Loneliness & Sadness & Sorrow), it's really successful bravo to Pierrot Studio.
+
+### Character
+
+For me, it's mixed in terms of character there are they are incredibly well written and there are some who are not really good, I will talk about it right away. First let's talk about Itachi who's for me the best character of the anime at first we thought he was a heartless villain but in reality it is quite the opposite the person had a reason why he decimated his clan it is for the sole purpose of protecting his brother (you are going to tell me "you criticize Obito but Itachi did almost the same" just wait), by doing that he avoided a civil war that could have caused unnecessary deaths he knew his clan was wrong, so it was the only solution. Now let's talk about Jiraiya he is the character who had the most infulence on the life of Naruto, despite his perverted behavior he was a father figure for the hero and his death contributed a lot to the development of Naruto(the saddest death of Naruto btw). And finally we will talk about Obito who is for me the worst character of the anime (with Sakura), this character is just incoherent at first during Kakashi's flashback I was sad for the character but as soon as I knew he had made a war because of a girl he went down in my esteem so that in the end he becomes nice because of talk no jutsu(thanks Naruto)oh and yes the talk no jutsu we see it quite often, and it's boring. I'm not going to talk about the Sasuke Naruto relationship because it does not tell something interesting. Otherwise, what is bad is that each antagonist has the same type of flashback, but that's okay.
+
+### Conclusion
+
+Naruto is clearly a really good show with ups and downs, Yeah.
+
+## Naruto Watch Order
 
 <client-only>
 <card-color :text='[
@@ -43,7 +60,7 @@ Naruto is a series that I believe has gotten a little bit over criticized over t
 ]'></card-color>
 </client-only>
 
-## Naruto Shippuden
+## Naruto Shippuden Watch Order
 
 <client-only>
 <card-color :ind='13' :text='[
