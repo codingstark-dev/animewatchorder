@@ -1,5 +1,5 @@
 ---
-title: Naruto Series Watch Order And Naruto Shippuden Chronological Order
+title: '[Latest] Naruto Series Watch Order 2021'
 description: 'How to Watch Naruto | In What Order Should I Watch Naruto | Naruto Series Watch Order |  Naruto Series | Naruto Chronological Order'
 image: 'https://1.bp.blogspot.com/-tLJ02x_gtw8/X-pF1ZjpNYI/AAAAAAAAUqs/JN-COI04hyoZUFr6NcMflaCPQyC9IXOvgCLcBGAsYHQ/w437-h640/naruto%2Bseries%2Bin%2Border.webp'
 alt: 'naruto series in order'

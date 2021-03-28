@@ -17,5 +17,5 @@ description: DMCA of SageAnime.com
 <h2>Changes and amendments</h2>
 <p>We reserve the right to modify this Policy or its terms relating to the Website and Services at any time, effective upon posting of an updated version of this Policy on the Website. When we do, we will revise the updated date at the bottom of this page.  Policy was created with <a style="color:inherit" target="_blank" href="https://www.websitepolicies.com/dmca-policy-generator">WebsitePolicies</a>.</p>
 <h2>Reporting copyright infringement</h2>
-<p>If you would like to notify us of the infringing material or activity, you may do so via the <a target="_blank" rel="nofollow" href="https://sageanime.com/watch-order/a122">contact form</a> or send an email to s&#97;geani&#109;&#101;&#46;&#99;o&#109;&#64;g&#97;&#109;il.&#99;&#111;&#109;</p>
+<p>If you would like to notify us of the infringing material or activity, you may do so via the <a target="_blank" rel="nofollow" href="mailto:sageanime.com@gmail.com">Email</a> </p>
 <p>This document was last updated on December 25, 2020</p>
